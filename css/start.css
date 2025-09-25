@@ -1,0 +1,31 @@
+.background {
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  filter: blur(3px);
+  height: 97vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.btn {
+  position: fixed;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}

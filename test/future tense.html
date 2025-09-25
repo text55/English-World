@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English World</title>
+	<link rel="stylesheet" type="text/css" href="../css/test.css">
+</head>
+<body>
+	 <div class="container">
+        <h1>Проверьте чему вы научились!</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. You ___ (HAVE) a great time in the Bahamas.</p>
+                <label><input type="radio" name="q1" value="wrong"> has</label><br>
+                <label><input type="radio" name="q1" value="correct"> will have</label><br>
+                <label><input type="radio" name="q1" value="wrong"> have</label><br>
+            </div>
+            <div class="question">
+                <p>2. I know. I ___ (GO) to China this summer.</p>
+                <label><input type="radio" name="q2" value="correct"> will go </label><br>
+                <label><input type="radio" name="q2" value="wrong"> go</label><br>
+                <label><input type="radio" name="q2" value="wrong"> was</label><br>
+            </div>
+            <div class="question">
+                <p>3. I am sure my company ___ (LET) me fly there via Far East.</p>
+                <label><input type="radio" name="q3" value="wrong"> let</label><br>
+                <label><input type="radio" name="q3" value="correct"> will let</label><br>
+                <label><input type="radio" name="q3" value="wrong"> lets</label><br>
+            </div>
+            <div class="question">
+                <p>4. I hope there ___ (BE) chances to take a break and relax too.</p>
+                <label><input type="radio" name="q4" value="wrong">was</label><br>
+                <label><input type="radio" name="q4" value="wrong"> is</label><br>
+                <label><input type="radio" name="q4" value="correct"> will be</label><br>
+            </div>
+            <div class="question">
+                <p>5. At seven-thirty, so I ___ (COLLECT) you from your house at five.</p>
+                <label><input type="radio" name="q5" value="wrong"> collect</label><br>
+                <label><input type="radio" name="q5" value="wrong"> collected</label><br>
+                <label><input type="radio" name="q5" value="correct"> will collect</label><br>
+            </div>
+            <div class="question">
+                <p>6. Tomorrow evening I expect I ___ (eat) out with my friends.</p>
+                <label><input type="radio" name="q6" value="wrong"> eat </label><br>
+                <label><input type="radio" name="q6" value="wrong"> ate</label><br>
+                <label><input type="radio" name="q6" value="correct"> will eat</label><br>
+            </div>
+             <div class="question">
+                <p>7. I ___ (DELIVER) the goods on Friday.</p>
+                <label><input type="radio" name="q7" value="correct"> will deliver </label><br>
+                <label><input type="radio" name="q7" value="wrong"> delivered</label><br>
+                <label><input type="radio" name="q7" value="wrong"> was delivered</label><br>
+            </div>
+            <div class="question">
+                <p>8. I've talked to my boss, but he's very unhelpful and ___ (NOT/DO) anything about the problem.</p>
+                <label><input type="radio" name="q8" value="correct"> won't do</label><br>
+                <label><input type="radio" name="q8" value="wrong"> won't did</label><br>
+                <label><input type="radio" name="q8" value="wrong"> don't do</label><br>
+            </div>
+            <div class="question">
+                <p>9. I took these trousers back to the shop, but the ___ (NOT/CHANGE) them without a receipt.</p>
+                <label><input type="radio" name="q9" value="correct"> won't change</label><br>
+                <label><input type="radio" name="q9" value="wrong"> won't changed</label><br>
+                <label><input type="radio" name="q9" value="wrong"> don't change</label><br>
+            </div>
+            <div class="question">
+                <p>10. I ___ (MEET) my new boss at ten o'clock.</p>
+                <label><input type="radio" name="q10" value="wrong"> meet</label><br>
+                <label><input type="radio" name="q10" value="wrong"> met</label><br>
+                <label><input type="radio" name="q10" value="correct"> will meet</label><br>
+            </div>
+	    <button type="button" id="submit-button">Узнать результат</button>
+        </form>
+        <div id="result" class="hidden">
+            <p id="score-text"></p>
+            <button id="next-button" class="hidden">Вернуться к обучению</button>
+        </div>
+    </div>
+    <script src="../js/testscript.js"></script>
+</body>
+</html>
