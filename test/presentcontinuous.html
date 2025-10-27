@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English World</title>
+	<link rel="stylesheet" type="text/css" href="../css/test.css">
+</head>
+<body>
+	<div class="container">
+        <h1>Проверьте чему вы научились!</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. My car is broken, so I ___ my mum’s.</p>
+                <label><input type="radio" name="q1" value="wrong"> am use</label><br>
+                <label><input type="radio" name="q1" value="correct"> am using</label><br>
+                <label><input type="radio" name="q1" value="wrong"> is using</label><br>
+            </div>
+
+            <div class="question">
+                <p>2. Ron and Michael ___ at the table and doing their homework.</p>
+                <label><input type="radio" name="q2" value="wrong"> is sitting</label><br>
+                <label><input type="radio" name="q2" value="wrong"> are sit</label><br>
+                <label><input type="radio" name="q2" value="correct"> are sitting</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. Why ___ I wonder?</p>
+                <label><input type="radio" name="q3" value="wrong"> is you crying</label><br>
+                <label><input type="radio" name="q3" value="wrong"> do you crying</label><br>
+                <label><input type="radio" name="q3" value="correct"> are you crying</label><br>
+            </div>
+
+            <div class="question">
+                <p>4. ___ this performance?</p>
+                <label><input type="radio" name="q4" value="correct"> Do you like</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Do you liking</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Are you liking</label><br>
+            </div>
+
+            <div class="question">
+                <p>5. He ___ how to use a computer at the moment.</p>
+                <label><input type="radio" name="q5" value="wrong"> are learning</label><br>
+                <label><input type="radio" name="q5" value="wrong"> is learn</label><br>
+                <label><input type="radio" name="q5" value="correct"> is learning</label><br>
+            </div>
+
+            <div class="question">
+                <p>6. Look! It ___ any more.</p>
+                <label><input type="radio" name="q6" value="wrong"> is raining</label><br>
+                <label><input type="radio" name="q6" value="correct"> isn’t raining</label><br>
+                <label><input type="radio" name="q6" value="wrong"> isn’t rainning</label><br>
+            </div>
+
+             <div class="question">
+                <p>7. The population of the country ____.</p>
+                <label><input type="radio" name="q7" value="wrong"> are constantly increasing</label><br>
+                <label><input type="radio" name="q7" value="wrong"> is constantly increase</label><br>
+                <label><input type="radio" name="q7" value="correct"> is constantly increasing</label><br>
+            </div>
+
+            <div class="question">
+                <p>8. Carol is busy. She ___ a letter at the moment.</p>
+                <label><input type="radio" name="q8" value="wrong"> is typeing</label><br>
+                <label><input type="radio" name="q8" value="correct"> is typing</label><br>
+                <label><input type="radio" name="q8" value="wrong"> is type</label><br>
+            </div>
+
+            <div class="question">
+                <p>9. Both my friend and I ___ today.</p>
+                <label><input type="radio" name="q9" value="wrong"> is working</label><br>
+                <label><input type="radio" name="q9" value="wrong"> am working</label><br>
+                <label><input type="radio" name="q9" value="correct"> are working</label><br>
+            </div>
+
+            <div class="question">
+                <p>10. ___ in the park right now?</p>
+                <label><input type="radio" name="q10" value="wrong"> Is she run</label><br>
+                <label><input type="radio" name="q10" value="correct"> Is she running</label><br>
+                <label><input type="radio" name="q10" value="wrong"> Is she runing</label><br>
+            </div>
+
+            <div class="question">
+                <p>11. The students ___ a new project this semester.</p>
+                <label><input type="radio" name="q11" value="wrong"> doing</label><br>
+                <label><input type="radio" name="q11" value="wrong"> is doing</label><br>
+                <label><input type="radio" name="q11" value="correct"> are doing</label><br>
+            </div>
+
+            <div class="question">
+                <p>12. I ___ what you mean.</p>
+                <label><input type="radio" name="q12" value="wrong"> am not understand</label><br>
+                <label><input type="radio" name="q12" value="correct"> don’t understand</label><br>
+                <label><input type="radio" name="q12" value="wrong"> am not understanding</label><br>
+            </div>
+
+            <div class="question">
+                <p>13. Marta ___ with other children in her room.</p>
+                <label><input type="radio" name="q13" value="wrong"> playing</label><br>
+                <label><input type="radio" name="q13" value="wrong"> are playing</label><br>
+                <label><input type="radio" name="q13" value="correct"> is playing</label><br>
+            </div>
+
+            <div class="question">
+                <p>14. ___ this birthday party.</p>
+                <label><input type="radio" name="q14" value="correct"> I’m not enjoying</label><br>
+                <label><input type="radio" name="q14" value="wrong"> I am not enjoying</label><br>
+                <label><input type="radio" name="q14" value="wrong"> I’m not enjoy</label><br>
+            </div>
+
+            <div class="question">
+                <p>15. ___ any languages at the moment?</p>
+                <label><input type="radio" name="q15" value="correct"> Are you studying</label><br>
+                <label><input type="radio" name="q15" value="wrong"> Are you studing</label><br>
+                <label><input type="radio" name="q15" value="wrong"> Are you study</label><br>
+            </div>
+	    <button type="button" id="submit-button">Узнать результат</button>
+        </form>
+        <div id="result" class="hidden">
+            <p id="score-text"></p>
+            <button id="next-button" class="hidden">Вернуться к обучению</button>
+        </div>
+    </div>
+    <script src="../js/testscript.js"></script>
+</body>
+</html>
