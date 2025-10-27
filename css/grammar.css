@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.section-title {
+    font-size: 2em;
+    margin: 20px 0 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.formula-block {
+    background-color: #d4e4d1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.example-block {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #007bff;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    h1 { font-size: 2em; ]}
+    p { text-align: left; }
+    .section-title { font-size: 1.5em; }
+}
+.present-simple .section-title {
+    background-color: #28a745;
+}
+.present-continuous .section-title {
+    background-color: #007bff;
+}
+.much-many .section-title {
+    background-color: #ff9800;
+}
+
+.past-tense .section-title {
+    background-color: #343a40; 
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.past-tense .past-simple .section-title { background-color: #dc3545; } 
+.past-tense .present-perfect .section-title { background-color: #6f42c1; } 
+.past-tense .past-perfect .section-title { background-color: #fd7e14; } 
+.past-tense .wish-past .section-title { background-color: #20c997; } 
+.past-tense .passive-voice .section-title { background-color: #e83e8c; } 
+.have-got .section-title {
+    background-color: #17a2b8;
+}
+.section-title {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin: 20px 0 10px;
+    border-radius: 5px;
+}
+.past-tense .btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+  border-radius: 30px;
+}
+.much-many .btn { background-color: #ff9800;
+ border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+  border-radius: 30px;}
+.present-simple .btn {background-color: #28a745;
+ border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+  border-radius: 30px;}
+.present-continuous .btn {background-color: #007bff;
+ border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+  border-radius: 30px;}
+.have-got .btn {background-color: #17a2b8;
+ border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+  border-radius: 30px;}
