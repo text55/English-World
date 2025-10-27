@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English World</title>
+    <link rel="stylesheet" href="css/progress.css">
+    <link rel="icon" type="image/x-icon" href="../images/45.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Ваш Прогресс</h1>
+        <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p class="stats">Вы прошли <span id="tests-taken">10</span> тестов.</p>
+        <p class="stats">Общая точность: <span id="accuracy">85%</span>.</p>
+        <button id="reset-progress" class="reset-button">Сбросить прогресс</button>
+    </div>
+    <script>
+        //localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const progress = JSON.parse(localStorage.getItem('progress')) || { testsTaken: 0, totalCorrect: 0, totalQuestions: 0 };
+            const percentageCorrect = progress.totalQuestions > 0 ? (progress.totalCorrect / progress.totalQuestions * 100).toFixed(2) : 0;
+            document.getElementById('tests-taken').textContent = progress.testsTaken;
+            document.getElementById('accuracy').textContent = `${percentageCorrect}%`;
+            const progressBar = document.querySelector('.progress');
+            progressBar.style.width = `${percentageCorrect}%`;
+        });
+        //Сброс прогресса
+        document.getElementById('reset-progress').addEventListener('click', () => {
+            localStorage.removeItem('progress');
+            alert('Прогресс сброшен!');
+            location.reload();
+        });
+    </script>
+</body>
+</html>
