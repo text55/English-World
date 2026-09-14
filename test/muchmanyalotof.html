@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English World</title>
+	<link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="../table/table.html" class="site-nav__logo">English <span>World</span></a>
+    <ul class="site-nav__links">
+      <li><a href="../table/table.html">Главная</a></li>
+      <li><a href="../games/matching-game.html">Игры</a></li>
+      <li><a href="../results.html">Прогресс</a></li>
+      <li><a href="../index.html">О проекте</a></li>
+    </ul>
+  </nav>
+
+	<div class="container">
+        <h1>Проверьте чему вы научились!</h1>
+        <form id="quiz-form" data-quiz="muchmanyalotof">
+            <div class="question">
+                <p>1. There are a few bananas and ... apples in the fridge.</p>
+                <label><input type="radio" name="q1" value="a"> many</label><br>
+                <label><input type="radio" name="q1" value="b"> much</label><br>
+                <label><input type="radio" name="q1" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>2. She put ... butter in the cake.</p>
+                <label><input type="radio" name="q2" value="a"> many</label><br>
+                <label><input type="radio" name="q2" value="b"> much</label><br>
+                <label><input type="radio" name="q2" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. Our teacher always gives us ... homework.</p>
+                <label><input type="radio" name="q3" value="a"> many</label><br>
+                <label><input type="radio" name="q3" value="b"> much</label><br>
+                <label><input type="radio" name="q3" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>4. We don't need ... eggs to cook this meal.</p>
+                <label><input type="radio" name="q4" value="a"> many</label><br>
+                <label><input type="radio" name="q4" value="b"> much</label><br>
+                <label><input type="radio" name="q4" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>5. He's made ... progress in such a short time!</p>
+                <label><input type="radio" name="q5" value="a"> many</label><br>
+                <label><input type="radio" name="q5" value="b"> much</label><br>
+                <label><input type="radio" name="q5" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>6. Are there ... unemployed people in your city.</p>
+                <label><input type="radio" name="q6" value="a"> many</label><br>
+                <label><input type="radio" name="q6" value="b"> much</label><br>
+                <label><input type="radio" name="q6" value="c"> a lot of</label><br>
+            </div>
+
+             <div class="question">
+                <p>7. There are ... oil deposits in Siberia.</p>
+                <label><input type="radio" name="q7" value="a"> many</label><br>
+                <label><input type="radio" name="q7" value="b"> much</label><br>
+                <label><input type="radio" name="q7" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>8. There is ... tine at our disposal.</p>
+                <label><input type="radio" name="q8" value="a"> many</label><br>
+                <label><input type="radio" name="q8" value="b"> much</label><br>
+                <label><input type="radio" name="q8" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>9. She is very sociable, that's why she has got ... friends.</p>
+                <label><input type="radio" name="q9" value="a"> many</label><br>
+                <label><input type="radio" name="q9" value="b"> much</label><br>
+                <label><input type="radio" name="q9" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>10. Our needs ... money to start a new business.</p>
+                <label><input type="radio" name="q10" value="a"> many</label><br>
+                <label><input type="radio" name="q10" value="b"> much</label><br>
+                <label><input type="radio" name="q10" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>11. You can't install ... equipment in a small shop.</p>
+                <label><input type="radio" name="q11" value="a"> many</label><br>
+                <label><input type="radio" name="q11" value="b"> much</label><br>
+                <label><input type="radio" name="q11" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>12. He doesnt't want ... advisors. He thinks he can solve the problem himself.</p>
+                <label><input type="radio" name="q12" value="a"> many</label><br>
+                <label><input type="radio" name="q12" value="b"> much</label><br>
+                <label><input type="radio" name="q12" value="c"> a lot of</label><br>
+            </div>
+
+            <div class="question">
+                <p>13. Astronomy studies ... interesting phenomena.</p>
+                <label><input type="radio" name="q13" value="a"> many</label><br>
+                <label><input type="radio" name="q13" value="b"> much</label><br>
+                <label><input type="radio" name="q13" value="c"> a lot of</label><br>
+            </div>
+        <button type="button" id="submit-button">Узнать результат</button>
+        </form>
+        <div id="result" class="hidden">
+            <p id="score-text"></p>
+            <p id="score-comment"></p>
+            <button id="next-button" class="hidden">Вернуться к обучению</button>
+        </div>
+    </div>
+    <script src="../js/quizdata.js"></script>
+    <script src="../js/testscript.js"></script>
+</body>
+</html>
