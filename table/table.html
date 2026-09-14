@@ -3,57 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English World</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <title>English World — учи английский по темам</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="icon" type="image/x-icon" href="../images/45.png">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Учебная таблица</h1>
-        </header>
-        <main class="main-content">
-            <div class="table-wrapper">
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th colspan="6">Грамматические правила</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="havegot.html">Структура have got</a></td>
-                            <td><a href="Present Simple.html">Present Simple</a></td>
-                            <td><a href="Present Continuous.html">Present Continuous</a></td>
-                            <td><a href="Much.html">MUCH, MANY AND A LOT OF</a></td>
-                            <td><a href="Past Simple.html">Past Tense</a></td>
-                        </tr>
-                    </tbody>
-                    <thead>
-                        <tr>
-                            <th colspan="6">Узнайте чему вы научились!</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="../test/havegot.html">Have got</a></td>
-                            <td><a href="../test/presentsimple.html">Present Simple</a></td>
-                            <td><a href="../test/presentcontinuous.html">Present Continous</a></td>
-                            <td><a href="../test/muchmanyalotof.html">MUCH, MANY AND A LOT OF</a></td>
-                            <td><a href="../test/past tense.html">Past Tense</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+  <nav class="site-nav">
+    <a href="table.html" class="site-nav__logo">English <span>World</span></a>
+    <ul class="site-nav__links">
+      <li><a href="table.html" class="is-active">Главная</a></li>
+      <li><a href="../games/matching-game.html">Игры</a></li>
+      <li><a href="../results.html">Прогресс</a></li>
+      <li><a href="../index.html">О проекте</a></li>
+    </ul>
+  </nav>
+
+    <header class="home-hero">
+        <div class="home-hero__content">
+            <h1>Учи английский <span>шаг за шагом</span></h1>
+            <p>Выбери тему ниже: сначала разбери правило, потом закрепи его тестом. Прогресс сохраняется автоматически.</p>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <section class="topics-section">
+            <h2>Темы грамматики</h2>
+            <div class="topics-grid">
+                <article class="topic-card">
+                    <span class="topic-card__icon">🧩</span>
+                    <h3>Have got</h3>
+                    <p>Структура have got — как говорить об обладании чем-либо в английском.</p>
+                    <div class="topic-card__actions">
+                        <a href="havegot.html" class="theory-link">Теория</a>
+                        <a href="../test/havegot.html" class="test-link">Тест</a>
+                    </div>
+                </article>
+                <article class="topic-card">
+                    <span class="topic-card__icon">☀️</span>
+                    <h3>Present Simple</h3>
+                    <p>Настоящее простое время: привычки, факты и расписания.</p>
+                    <div class="topic-card__actions">
+                        <a href="Present Simple.html" class="theory-link">Теория</a>
+                        <a href="../test/presentsimple.html" class="test-link">Тест</a>
+                    </div>
+                </article>
+                <article class="topic-card">
+                    <span class="topic-card__icon">⏳</span>
+                    <h3>Present Continuous</h3>
+                    <p>Настоящее длительное время: действия, происходящие прямо сейчас.</p>
+                    <div class="topic-card__actions">
+                        <a href="Present Continuous.html" class="theory-link">Теория</a>
+                        <a href="../test/presentcontinuous.html" class="test-link">Тест</a>
+                    </div>
+                </article>
+                <article class="topic-card">
+                    <span class="topic-card__icon">🔢</span>
+                    <h3>Much, Many, A lot of</h3>
+                    <p>Как правильно говорить о количестве исчисляемых и неисчисляемых вещей.</p>
+                    <div class="topic-card__actions">
+                        <a href="Much.html" class="theory-link">Теория</a>
+                        <a href="../test/muchmanyalotof.html" class="test-link">Тест</a>
+                    </div>
+                </article>
+                <article class="topic-card">
+                    <span class="topic-card__icon">🕰️</span>
+                    <h3>Past Tense</h3>
+                    <p>Прошедшее простое время: рассказываем о том, что уже случилось.</p>
+                    <div class="topic-card__actions">
+                        <a href="Past Simple.html" class="theory-link">Теория</a>
+                        <a href="../test/past-tense.html" class="test-link">Тест</a>
+                    </div>
+                </article>
+                <article class="topic-card">
+                    <span class="topic-card__icon">🔮</span>
+                    <h3>Future Simple</h3>
+                    <p>Будущее простое время: обещания, прогнозы и спонтанные решения.</p>
+                    <div class="topic-card__actions">
+                        <a href="Future Simple.html" class="theory-link">Теория</a>
+                        <a href="../test/future-tense.html" class="test-link">Тест</a>
+                    </div>
+                </article>
             </div>
-        </main>
-        <footer class="footer">
-            <button id="finish-learning">Закончить обучение</button>
-        </footer>
-    </div>
-    <script>
-        document.getElementById('finish-learning').addEventListener('click', () => {
-            window.location.href = "../results.html";
-        });
-    </script>
+        </section>
+
+        <section class="extra-section">
+            <div class="extra-card">
+                <h3>🎮 Игра «Найди пару»</h3>
+                <p>Закрепляй слова в игровой форме: сопоставляй английские слова с переводом на время.</p>
+                <a href="../games/matching-game.html">Играть</a>
+            </div>
+            <div class="extra-card">
+                <h3>📊 Твой прогресс</h3>
+                <p>Смотри статистику по всем пройденным тестам и свою общую точность.</p>
+                <a href="../results.html">Открыть</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
