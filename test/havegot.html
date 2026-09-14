@@ -1,63 +1,94 @@
 <!DOCTYPE html>
-<html lang="ru" class="have-got">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English World</title>
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/grammar.css">
-    <link rel="icon" type="image/x-icon" href="../images/45.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English World</title>
+	<link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/test.css">
 </head>
 <body>
   <nav class="site-nav">
-    <a href="table.html" class="site-nav__logo">English <span>World</span></a>
+    <a href="../table/table.html" class="site-nav__logo">English <span>World</span></a>
     <ul class="site-nav__links">
-      <li><a href="table.html" class="is-active">Главная</a></li>
+      <li><a href="../table/table.html">Главная</a></li>
       <li><a href="../games/matching-game.html">Игры</a></li>
       <li><a href="../results.html">Прогресс</a></li>
       <li><a href="../index.html">О проекте</a></li>
     </ul>
   </nav>
 
-    <div class="container">
-        <h2 class="section-title">Структура Have got</h2>
-        <p>"Have got" используется для выражения обладания или наличия чего-либо, чаще в британском английском. Рассмотрим его формы и примеры.</p>
+	 <div class="container">
+        <h1>Проверьте чему вы научились!</h1>
+        <form id="quiz-form" data-quiz="havegot">
+            <div class="question">
+                <p>1. My teacher ... got a red pen.</p>
+                <label><input type="radio" name="q1" value="a"> have</label><br>
+                <label><input type="radio" name="q1" value="b"> has</label><br>
+            </div>
 
-        <h3>Positive Form (положительная форма)</h3>
-        <p>Используется для указания на то, что у кого-то есть что-то.</p>
-        <div class="formula-block">Subject + have/has + got + object.</div>
-        <div class="example-block">
-            <p>I have got a car. — У меня есть машина.</p>
-            <p>She has got a new phone. — У неё есть новый телефон.</p>
+            <div class="question">
+                <p>2. We ... got a house.</p>
+                <label><input type="radio" name="q2" value="a"> have</label><br>
+                <label><input type="radio" name="q2" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. A dog ... got four legs.</p>
+                <label><input type="radio" name="q3" value="a"> have</label><br>
+                <label><input type="radio" name="q3" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>4. We ... got a new teacher.</p>
+                <label><input type="radio" name="q4" value="a"> have</label><br>
+                <label><input type="radio" name="q4" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>5. Your father ... got a lot of money.</p>
+                <label><input type="radio" name="q5" value="a"> have</label><br>
+                <label><input type="radio" name="q5" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>6. My parents ... got four children.</p>
+                <label><input type="radio" name="q6" value="a"> have</label><br>
+                <label><input type="radio" name="q6" value="b"> has</label><br>
+            </div>
+
+             <div class="question">
+                <p>7. They ... got two cars.</p>
+                <label><input type="radio" name="q7" value="a"> have</label><br>
+                <label><input type="radio" name="q7" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>8. My mother ... got a car.</p>
+                <label><input type="radio" name="q8" value="a"> have</label><br>
+                <label><input type="radio" name="q8" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>9. I ... got a lot of homework.</p>
+                <label><input type="radio" name="q9" value="a"> have</label><br>
+                <label><input type="radio" name="q9" value="b"> has</label><br>
+            </div>
+
+            <div class="question">
+                <p>10. Mandy ... got two sisters.</p>
+                <label><input type="radio" name="q10" value="a"> have</label><br>
+                <label><input type="radio" name="q10" value="b"> has</label><br>
+            </div>
+	    <button type="button" id="submit-button">Узнать результат</button>
+        </form>
+        <div id="result" class="hidden">
+            <p id="score-text"></p>
+            <p id="score-comment"></p>
+            <button id="next-button" class="hidden">Вернуться к обучению</button>
         </div>
-
-        <h3>Question Form (вопросительная форма)</h3>
-        <p>Используется для вопроса о наличии чего-либо.</p>
-        <div class="formula-block">Have/Has + Subject + got + object?</div>
-        <div class="example-block">
-            <p>Have you got a pen? — У тебя есть ручка?</p>
-            <p>Has he got any money? — У него есть деньги?</p>
-        </div>
-
-        <h3>Negative Form (отрицательная форма)</h3>
-        <p>Используется для указания на отсутствие чего-либо.</p>
-        <div class="formula-block">Subject + have/has + not + got + object.</div>
-        <div class="example-block">
-            <p>I have not (haven’t) got a dog. — У меня нет собаки.</p>
-            <p>She has not (hasn’t) got time. — У неё нет времени.</p>
-        </div>
-
-        <h3>Особенности</h3>
-        <p>
-            - "Have got" обычно используется в настоящем времени и синонимично "have", но чаще в разговорной речи.
-            - В вопросах и отрицаниях часто используется сокращение: haven’t got, hasn’t got.
-            - В прошедшем времени "have got" не используется, вместо этого применяют "had".
-        </p>
-        <div class="example-block">
-            <p>I had a great time yesterday. — У меня было прекрасное время вчера.</p>
-        </div>
-
-        <a href="table.html" class="btn">Назад</a>
     </div>
+    <script src="../js/quizdata.js"></script>
+    <script src="../js/testscript.js"></script>
 </body>
 </html>
