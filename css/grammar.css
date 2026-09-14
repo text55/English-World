@@ -1,164 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f7fa;
-    color: #333;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #04170d;
+    background-image: linear-gradient(rgba(4, 23, 13, 0.88), rgba(4, 23, 13, 0.93)), url('../images/background.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #eaf5ee;
     line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px 0 60px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 0 6px rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 36px 40px;
 }
 
-h1 {
-    color: #fff;
-    font-size: 2.5em;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-}
 .section-title {
-    font-size: 2em;
-    margin: 20px 0 10px;
-    padding: 10px;
+    font-size: 1.8em;
     text-align: center;
-    color: #fff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 28px 0 14px;
+}
+.container > .section-title:first-child {
+    margin-top: 0;
+    font-size: 2.1em;
+}
 
+h4 {
+    color: #00ff26;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 18px 0 6px;
+    letter-spacing: 0.3px;
 }
 
 .formula-block {
-    background-color: #d4e4d1;
-    padding: 15px;
+    background-color: rgba(0, 255, 38, 0.12);
+    border: 1px solid rgba(0, 255, 38, 0.3);
+    padding: 14px 16px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 12px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .example-block {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 18px;
     margin: 10px 0;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid #00ff26;
+    border-radius: 0 10px 10px 0;
+}
+.example-block p {
+    margin: 6px 0;
+    text-align: left;
 }
 
 p {
     text-align: justify;
     margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00ff26 0%, #00c94a 100%);
+    color: #04170d;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 11px 28px;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0, 255, 38, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0, 255, 38, 0.45);
+}
+.btn::before {
+    content: '\2190';
 }
 
 @media (max-width: 600px) {
-    body { padding: 10px; }
-    h1 { font-size: 2em; ]}
-    p { text-align: left; }
-    .section-title { font-size: 1.5em; }
+    .container {
+        padding: 26px 22px;
+        width: 92%;
+        margin: 20px 0 40px;
+    }
+    .section-title {
+        font-size: 1.4em;
+    }
+    .container > .section-title:first-child {
+        font-size: 1.7em;
+    }
+    p {
+        text-align: left;
+    }
 }
-.present-simple .section-title {
-    background-color: #28a745;
-}
-.present-continuous .section-title {
-    background-color: #007bff;
-}
-.much-many .section-title {
-    background-color: #ff9800;
-}
-
-.past-tense .section-title {
-    background-color: #343a40; 
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.past-tense .past-simple .section-title { background-color: #dc3545; } 
-.past-tense .present-perfect .section-title { background-color: #6f42c1; } 
-.past-tense .past-perfect .section-title { background-color: #fd7e14; } 
-.past-tense .wish-past .section-title { background-color: #20c997; } 
-.past-tense .passive-voice .section-title { background-color: #e83e8c; } 
-.have-got .section-title {
-    background-color: #17a2b8;
-}
-.section-title {
-    font-size: 2em;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    margin: 20px 0 10px;
-    border-radius: 5px;
-}
-.past-tense .btn {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  top: 50%;
-  left: 10%;
-  border-radius: 30px;
-}
-.much-many .btn { background-color: #ff9800;
- border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  top: 50%;
-  left: 10%;
-  border-radius: 30px;}
-.present-simple .btn {background-color: #28a745;
- border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  top: 50%;
-  left: 10%;
-  border-radius: 30px;}
-.present-continuous .btn {background-color: #007bff;
- border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  top: 50%;
-  left: 10%;
-  border-radius: 30px;}
-.have-got .btn {background-color: #17a2b8;
- border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  top: 50%;
-  left: 10%;
-  border-radius: 30px;}

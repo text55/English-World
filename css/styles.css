@@ -149,35 +149,44 @@ nav .active {
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  animation: bottomIn 1s ease-in-out forwards;
-  animation-delay: 0.3s;
-  opacity: 0;
 }
 #about .left-grid p,
-#projects .left-grid p {;
+#projects .left-grid p {
   font-size: 100px;
   line-height: 1.8;
   color: rgb(233, 233, 233);
-  animation: bottomIn 1s ease-in-out forwards;
-  animation-delay: 0.4s;
-  opacity: 0;
 }
 .action-btn {
-  font-size: 18px;
-  color: black;
-  font-weight: 600;
-  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 15px;
+  color: #04170d;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   text-transform: capitalize;
-  height: 45px;
-  width: 200px;
-  background-color: #00FF26;
-  border-radius: 25px;
+  text-decoration: none;
+  padding: 7px 18px;
+  background: linear-gradient(135deg, #00ff26 0%, #00c94a 100%);
+  border-radius: 50px;
   cursor: pointer;
-  transition: 0.3s;
-  animation: bottomIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
+  box-shadow: 0 6px 16px rgba(0, 255, 38, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.action-btn::after {
+  content: '\2192';
+  font-size: 15px;
+  line-height: 1;
+  transition: transform 0.25s ease;
 }
 .action-btn:hover {
-  background-color: #00d11f;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 255, 38, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.action-btn:hover::after {
+  transform: translateX(4px);
+}
+.action-btn:active {
+  transform: translateY(-1px);
 }

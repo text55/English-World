@@ -1,32 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f8fb;
-    color: #333;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    background-color: #04170d;
+    background-image: linear-gradient(rgba(4, 23, 13, 0.88), rgba(4, 23, 13, 0.93)), url('../images/background.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    color: #ffffff;
 }
 
 .container {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 0 6px rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 30px 40px;
     text-align: center;
     width: 90%;
-    max-width: 400px;
+    max-width: 420px;
+    margin-top: 60px;
 }
 
 h1 {
-    color: #2c3e50;
+    font-weight: 800;
+    font-size: 1.6em;
     margin-bottom: 20px;
 }
 
 .progress-bar {
-    background: #e0e0e0;
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 25px;
     overflow: hidden;
     height: 25px;
@@ -35,32 +46,36 @@ h1 {
 }
 
 .progress {
-    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    background: linear-gradient(90deg, #00c94a, #00ff26);
     height: 100%;
     transition: width 0.4s ease;
 }
 
 .stats {
     margin: 10px 0;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .reset-button {
-    background: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffb4a8;
+    border: 1px solid rgba(255, 138, 117, 0.4);
+    padding: 10px 22px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
+    font-size: 0.95rem;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.2s ease;
 }
 
 .reset-button:hover {
-    background: #c0392b;
+    background: rgba(255, 138, 117, 0.15);
 }
 
 .reset-button:focus {
     outline: none;
-    box-shadow: 0 0 3px #e74c3c;
+    box-shadow: 0 0 0 3px rgba(255, 138, 117, 0.3);
 }
