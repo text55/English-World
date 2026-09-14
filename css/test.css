@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #04170d;
+    background-image: linear-gradient(rgba(4, 23, 13, 0.88), rgba(4, 23, 13, 0.93)), url('../images/background.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    color: #ffffff;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 0 6px rgba(255, 255, 255, 0.12);
+    padding: 30px;
+    border-radius: 24px;
+    max-width: 760px;
+    width: 90%;
+    text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1 {
+    margin-bottom: 24px;
+    font-size: 1.6em;
+    font-weight: 800;
+}
+.question {
+    margin-bottom: 18px;
+    text-align: left;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.question p {
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+.question label {
+    display: block;
+    padding: 6px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+.question label:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+button {
+    background: linear-gradient(135deg, #00ff26 0%, #00c94a 100%);
+    color: #04170d;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 255, 38, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0, 255, 38, 0.45);
+}
+button:disabled {
+    opacity: 0.6;
+    cursor: default;
+    transform: none;
+}
+.hidden {
+    display: none;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#score-comment {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+#score-comment.grade-2 { color: #ff8a75; }
+#score-comment.grade-3 { color: #ffc266; }
+#score-comment.grade-4 { color: #6fc3ff; }
+#score-comment.grade-5 { color: #5be08a; }
+#score-comment.grade-perfect { color: #00ff26; }
+.answer-correct {
+    color: #5be08a;
+    font-weight: bold;
+}
+.answer-incorrect {
+    color: #ff8a75;
+    text-decoration: line-through;
+}
